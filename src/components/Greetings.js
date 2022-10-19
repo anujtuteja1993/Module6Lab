@@ -2,9 +2,17 @@ import React from "react";
 
 const Greeting = (props) => {
     if (!props.name) {
-        return (<h1>Hello World!</h1>);
+        return (
+            <div>
+                <p>Hello World!</p>
+            </div>
+        )
     }
-    return (<h1>Hello {props.name}</h1>)
+    return (
+        <div>
+            <p>Hello {props.name}</p>
+        </div>
+    )
 }
 
 export default Greeting;
