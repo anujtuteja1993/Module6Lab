@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
 import Greeting from './components/Greetings';
+import GreeetingsButton from './components/GreetingsButton'
+import Emoji from './components/Emoji';
 
 function App() {
   return (
@@ -11,14 +13,8 @@ function App() {
           Edit <code>src/App.js</code> and save to reload.
         </p>
         <Greeting name="John"/>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <GreeetingsButton />
+        <Emoji />
       </header>
     </div>
   );
