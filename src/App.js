@@ -3,6 +3,7 @@ import './App.css';
 import Greeting from './components/Greetings';
 import GreeetingsButton from './components/GreetingsButton'
 import Emoji from './components/Emoji';
+import Calculator from './components/Calculator';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Greeting name="John"/>
         <GreeetingsButton />
         <Emoji />
+        <Calculator />
       </header>
     </div>
   );
