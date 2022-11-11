@@ -2,10 +2,10 @@ import React, { useState } from "react";
 
 
 const Calculator = () => {
-    const [firstNumber, setFirstNumber] = useState(0);
-    const [secondNumber, setSecondNumber] = useState(0);
+    const [firstNumber, setFirstNumber] = useState('');
+    const [secondNumber, setSecondNumber] = useState('');
     const [operator, setOperator] = useState('+');
-    const[result, setResult] = useState(0);
+    const[result, setResult] = useState('');
 
     const Calculate = () => {
 
@@ -47,6 +47,7 @@ const Calculator = () => {
             </div>
             <div>
             <button onClick={Calculate}>Calculate</button>
+            <button onClick={() => {setResult('')}}>Clear</button>
             </div>
             <div>
                 <input value={result}></input>
